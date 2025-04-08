@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+/* dark-green: "#00704a"
+orange: "#ffbc00"
+light-green: "00ac45"
+offWhite: "#ffcfc"
+brown : "#362415" */
+
+:root {
+  --dark-green: #00704a;
+  --orange: #ffbc00;
+  --light-green: #00ac45;
+  --offWhite: #fffcfc;
+  --brown: #362415;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.common-heading{
+  font-size: 28px;
+  font-weight: bold;
+
+  border-bottom: 3px solid var(--light-green);
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* button */
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(45deg, var(--orange), var(--light-green));
+  color: white !important;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-gradient:hover {
+  background: linear-gradient(45deg, var(--light-green), var(--orange));
+  transform: scale(1.05);
+  color: var(--offWhite);
 }

@@ -1,0 +1,62 @@
+
+.common-heading{
+    font-size: 28px;
+    font-weight: bold;
+ 
+    border-bottom: 3px solid var(-- --light-green);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.about-section {
+    padding: 50px 0;
+    background: #fff;
+}
+.about-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+    .green-box {
+        position: absolute;
+        left: -10%;
+        top: 10%;
+        width: 80%;
+        height: 80%;
+        background-color: #76c043;
+        z-index: -1;
+        border-radius: 10px;
+}
+.about-content h2 {
+    font-weight: 700;
+    color: #222;
+}
+.feature-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.feature-box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+.feature-box a {
+    color: #76c043;
+    font-weight: 600;
+    text-decoration: none;
+}
+.feature-box a:hover {
+    text-decoration: underline;
+}
+.farmer-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
